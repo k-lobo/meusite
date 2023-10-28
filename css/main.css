@@ -1,0 +1,307 @@
+/* Meu primeiro Comentário */
+/* Reset do CSS para o navegador*/ 
+*{
+    margin: 0;  /* Margem */
+    padding: 0;  /* Preenchimento */
+} 
+
+/* Corpo do Site */ 
+body{
+    height: 100%; /* altura */
+    width: 100%; /* largura */
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#7aeef8, #c7c8c8);
+    background-repeat: no-repeat;
+}   
+/* Logo  */ 
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem img{
+    width: 170px;
+    border-radius: 200px;
+    margin-top: 150px;
+}
+
+/* Titulo */ 
+.name{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #308ff4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Topico Redes Sociais */
+.redes-sociais{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display:flex; /* organizar itens na mesma linha */
+    justify-content:center;
+    align-items:center; /* alinhamento de itens  */
+}
+.icon, .email {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px; 
+    transition: all 0.3s ease-out; /* voltar na explicação */ 
+    box-shadow:0 5px 5px rgba(0,0,0,.1);
+    cursor: pointer;
+    margin: 3px;
+    overflow: hidden;
+}
+.icon i, #email i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: rgb(237, 237, 237);
+    color:#308ff4;  /* Cor do Icone */
+    cursor: pointer;
+}
+.icon span a{
+    list-style: none;
+    font-family:'Times New Roman', Times, serif;
+    float: right;
+    margin-right: 23px;
+    font-weight: 100;
+    color:#308ff4 ; /* Cor do Icone */
+    line-height: 35px;
+    font-size: 17px;
+}
+.name-icon{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+    float: right;
+    color: #c7c8c8;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 17px;
+}
+.icon:hover{
+    width: 125px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 20px;
+}
+.icon:nth-child(1):hover i{
+    background: #030303;
+}
+.icon:nth-child(2):hover i{
+    background: #df4bf2;
+}
+.icon:nth-child(3):hover i{
+    background: #41adec;
+}
+.icon:nth-child(4):hover i{
+    background: #030303;
+}
+.email:hover i {
+    background: red;    
+}
+/* Fim CSS Redes Socias  */
+
+/*Css texto*/
+.texto{
+    position:relative ;
+    display: flex;
+    justify-content: center;  /*centralizar Texto*/
+    align-items: center;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 500px;
+    height:50px;
+    padding: 40px 40px 40px 40px;   /*pra cima,direita,baixo,esquerda*/
+    border-radius: 30px; 
+    color: #030303;
+    background: #c7c8c8;
+    overflow: hidden;
+    box-shadow: inset;
+    cursor: pointer;
+}   
+#sobre-mim{
+    position: absolute;
+    top: 3px;
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+
+}
+
+.linguagem{
+    display: flex;
+    justify-content:center;
+    margin: 50px;
+   
+}
+.linguagem img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:170px;
+    border-radius: 200px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px;
+}
+.Projetos{
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+
+}
+.Projetos a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.item{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+    border: 5px solid #41adec;
+    border-radius: 50px;
+    width: 700px;
+    height: 80px;
+    margin-bottom: 7px;
+    background: #f9ffff;
+    box-shadow: 0 5px 5px rgba(173, 10, 10, 0.5);
+    cursor: pointer;
+
+}   
+.item:hover{
+    background: #2e0fbb;
+    transition: 5s;
+}
+
+.video{
+    padding: 10px;
+    margin: auto;
+    display: none;
+}
+
+.video.active{
+    display: block;
+}
+.rodape{
+    color: #308ff4;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 'Time New Roman', Times, serif;
+}
+
+/* fim das configuração para DESKTOP */
+
+/* Dispositivo Mobiles*/
+
+@media (max-width:700px ){ /* resolução700px */
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+        
+    }
+    .texto{
+        width: 350px;
+        height: 150px;
+    }
+    .linguagem img{
+        width: 165px;
+    }
+    .item{
+        width: 350px;
+    }
+    .video{
+        width: 350px;
+    }
+} /* Fim da resolução700px */
+@media(max-width:500px){
+    .imagem img{
+        width: 120px;
+    }
+    .texto{
+        padding: 15px;
+        width: 244px;
+        height: 200px;
+        margin-top: 30px;
+
+    }
+    .subtitulo{
+        font-size: 22px;
+        margin-top:20px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video{
+        width: 280px;
+        height: 180px;
+    }
+    .item{
+        width: 265px;
+        height: 40px;
+    }
+    .linguagem img{
+        margin-top: 15px;
+        width: 120px;
+
+    }
+    .icon, #email{
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+    }
+    .icon i, #email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    .icon span{
+        margin-right: 43px;
+        line-height: 20px;
+        font-size: 10px;
+    }
+    .rodape{
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+
+    }
+    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
